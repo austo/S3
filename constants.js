@@ -69,6 +69,7 @@ export default {
             // data placement type determines which type of fragments stored in
             //  this backend, either 'none', 'data', 'parity', 'both'
             dp: 'both',
+            id: 'm',
             md: [{
                 // domain name, e.g 'Rack'
                 domain: '',
@@ -89,6 +90,7 @@ export default {
         file: {
             name: 'topologyFile',
             dp: 'both',
+            id: 'f',
             // multiple domaines are defined in a sequential way,
             // i.e. every prior domain will contain posterior domains
             md: [{
