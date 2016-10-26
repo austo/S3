@@ -29,6 +29,7 @@
     "commander": "^2.9.0",
     "dpclient": "scality/dpclient#ft/s3server",
     "ioctl": "^2.0.0",
+    "kinetic": "scality/kineticlib",
     "level": "^1.4.0",
     "level-sublevel": "^6.5.4",
     "multilevel": "^7.3.0",
