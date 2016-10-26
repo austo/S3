@@ -103,6 +103,20 @@ export default {
                 binImgRange: [0, 24],
             }],
         },
+        kinetic: {
+            name: 'topologyKinetic',
+            id: 'k',
+            dp: 'both',
+            keyFrag: 'key',
+            // multiple domaines are defined in a sequential way,
+            // i.e. every prior domain will contain posterior domains
+            md: [{
+                domain: '',
+                number: 1,
+                replacement: true,
+                binImgRange: [0, 24],
+            }],
+        },
         scality: {
             name: 'topologyScality',
             dp: 'both',
@@ -120,10 +134,10 @@ export default {
         // default erasure coding
         params: {
             bc_id: 1,   // eslint-disable-line
-            k: 12,       // number of data fragments
-            m: 6,       // number of parity fragments
+            k: 6,       // number of data fragments
+            m: 3,       // number of parity fragments
             w: 8,
-            hd: 7,
+            hd: 4,
             ct: 2,
         },
         // available erasure codes backends
